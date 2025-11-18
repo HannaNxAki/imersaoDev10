@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- Metadados essenciais para o navegador -->
+    <meta charset="UTF-8">
+    <!-- Garante que a página seja responsiva e se adapte a diferentes tamanhos de tela -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Link para a folha de estilos externa que define a aparência da página -->
+    <link rel="stylesheet" href="styles.css">
+    <title>Document</title>
+</head>
+<body>
+    <!-- Cabeçalho da página: contém o título principal e a barra de busca -->
+    <header>
+        <h1>Base de Conhecimento</h1>
+        <div>
+            <!-- Campo de busca. O 'aria-label' melhora a acessibilidade para leitores de tela -->
+            <input type="search" placeholder="Pesquisar artigos..." aria-label="Caixa de pesquisa">
+            <button id="botao-busca">Buscar</button>
+        </div>
+    </header>
+
+    <!-- Conteúdo principal da página, onde os artigos serão exibidos -->
+    <main></main>
+
+    <!-- Rodapé da página: contém links para redes sociais -->
+    <footer class="footer">
+        <ul class="footer-links">
+            <!-- Links para redes sociais. 'target="_blank"' abre em uma nova aba. -->
+            <!-- 'rel="noopener noreferrer"' é uma medida de segurança para links externos. -->
+            <li><a href="https://github.com/seu-usuario" target="_blank" rel="noopener noreferrer">GitHub</a></li>
+            <li><a href="https://linkedin.com/in/seu-usuario" target="_blank" rel="noopener noreferrer">LinkedIn</a></li>
+            <li><a href="https://twitter.com/seu-usuario" target="_blank" rel="noopener noreferrer">Twitter</a></li>
+        </ul>
+    </footer>
+</body>
+</html>
