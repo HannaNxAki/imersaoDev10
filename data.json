@@ -1,0 +1,72 @@
+[
+  {
+    "id": 1,
+    "title": "Hollow Knight",
+    "category": "Metroidvania, Plataforma",
+    "content": "Explore um vasto reino em ruínas de insetos e heróis. Enfrente hordas de criaturas, desvende mistérios antigos e lute contra chefes desafiadores neste aclamado jogo de ação e aventura.",
+    "tags": ["metroidvania", "plataforma", "ação", "aventura", "difícil"]
+  },
+  {
+    "id": 2,
+    "title": "Stardew Valley",
+    "category": "Simulação, RPG",
+    "content": "Você herdou a antiga fazenda do seu avô. Com ferramentas de segunda mão e algumas moedas, você dará início à sua nova vida para transformar campos abandonados em um lar próspero.",
+    "tags": ["simulação", "fazenda", "rpg", "pixel art", "relaxante"]
+  },
+  {
+    "id": 3,
+    "title": "Celeste",
+    "category": "Plataforma",
+    "content": "Ajude Madeline a sobreviver aos seus demônios interiores em sua jornada até o topo da Montanha Celeste, neste jogo de plataforma super afiado e feito à mão.",
+    "tags": ["plataforma", "difícil", "pixel art", "história", "indie"]
+  },
+  {
+    "id": 4,
+    "title": "Hades",
+    "category": "Roguelike, Ação",
+    "content": "Desafie o deus dos mortos enquanto você batalha para fugir do Submundo neste 'roguelike' dos criadores de Bastion e Transistor. Uma visão única da mitologia grega.",
+    "tags": ["roguelike", "ação", "mitologia", "narrativa", "rpg"]
+  },
+  {
+    "id": 5,
+    "title": "Undertale",
+    "category": "RPG",
+    "content": "Um RPG onde você não precisa destruir ninguém. Explore um mundo subterrâneo cheio de monstros, onde suas escolhas determinam o destino de todos.",
+    "tags": ["rpg", "pixel art", "escolhas", "cult", "trilha sonora"]
+  },
+  {
+    "id": 6,
+    "title": "Shovel Knight: Treasure Trove",
+    "category": "Plataforma, Ação",
+    "content": "Uma carta de amor aos jogos de 8-bits. Corra, pule e use sua pá para lutar contra os cavaleiros da Ordem Sem Quartel e sua líder, a Feiticeira.",
+    "tags": ["plataforma", "ação", "retrô", "pixel art", "8-bit"]
+  },
+  {
+    "id": 7,
+    "title": "Dead Cells",
+    "category": "Roguelite, Metroidvania",
+    "content": "Explore um castelo em constante mudança neste jogo de ação e plataforma 2D. Lute, morra, aprenda e repita. A morte é apenas o começo.",
+    "tags": ["roguelite", "metroidvania", "ação", "pixel art", "rápido"]
+  },
+  {
+    "id": 8,
+    "title": "Cuphead",
+    "category": "Ação, Plataforma",
+    "content": "Inspirado nos desenhos animados da década de 1930, Cuphead é um jogo de ação 'run and gun' focado em batalhas épicas contra chefes.",
+    "tags": ["ação", "difícil", "co-op", "desenho animado", "run and gun"]
+  },
+  {
+    "id": 9,
+    "title": "Inside",
+    "category": "Puzzle, Plataforma",
+    "content": "Caçado e sozinho, um garoto se encontra no centro de um projeto sombrio. Uma aventura narrativa com quebra-cabeças e uma atmosfera inesquecível.",
+    "tags": ["puzzle", "plataforma", "atmosférico", "sombrio", "narrativa"]
+  },
+  {
+    "id": 10,
+    "title": "The Witness",
+    "category": "Puzzle",
+    "content": "Você acorda sozinho em uma ilha estranha, cheia de quebra-cabeças que irão desafiar e surpreender você. Um jogo de exploração e descoberta em primeira pessoa.",
+    "tags": ["puzzle", "exploração", "primeira pessoa", "desafiador", "mistério"]
+  }
+]
