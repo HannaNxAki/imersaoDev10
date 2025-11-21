@@ -49,6 +49,13 @@ document.addEventListener('DOMContentLoaded', () => {
             return;
         }
 
+        // Ordena os artigos por nota (decrescente) e, em caso de empate, por ano (decrescente)
+        articles.sort((a, b) => {
+            if (b.rating !== a.rating) {
+                return b.rating - a.rating; // Ordena por nota (maior primeiro)
+            }
+            return b.year - a.year; // Se as notas forem iguais, ordena por ano (mais recente primeiro)
+        });
         articles.forEach(item => {
             const wrapperElement = document.createElement('div');
             wrapperElement.className = 'article-wrapper';

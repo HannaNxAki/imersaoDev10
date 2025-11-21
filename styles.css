@@ -6,10 +6,10 @@
 }
 
 :root {
-    --primary-color: #8ab4f8; /* Cor primária para links e destaques */
-    --secondary-color: #e8eaed; /* Cor secundária (cinza claro) */
-    --tertiary-color: #9aa0a6; /* Cor terciária (cinza médio) */
-    --bg-color: #292d38; /* Cor de fundo (cinza escuro) */
+    --primary-color: #9147ff; /* Roxo vibrante para destaques */
+    --secondary-color: #e0e0e0; /* Cinza claro para texto principal */
+    --tertiary-color: #888888; /* Cinza médio para texto secundário */
+    --bg-color: #121212; /* Fundo quase preto */
 }
 
 body {
@@ -20,13 +20,14 @@ body {
 }
 
 header {
-    padding: 2rem 1rem; /* Espaçamento interno (2rem em cima/baixo, 1rem nos lados) */
+    padding: 1.5rem 2rem; /* Espaçamento interno ajustado */
     display: flex; /* Usa Flexbox para alinhar o título e a busca lado a lado */
     align-items: center; /* Alinha os itens verticalmente ao centro */
-    justify-content: space-around; /* Distribui o espaço horizontalmente entre os itens */
+    justify-content: center; /* Centraliza os itens do cabeçalho */
     position: sticky; /* Mantém o cabeçalho fixo no topo ao rolar a página */
     top: 0; /* Posição do topo quando sticky */
     background: var(--bg-color); /* Cor de fundo do cabeçalho */
+    background-color: #181818; /* Um tom ligeiramente mais claro que o fundo */
     z-index: 10; /* Define a ordem de empilhamento para ficar sobre outros elementos */
     border-bottom: 1px solid var(--bg-color); /* Adiciona uma borda inferior */
     gap: 1rem; /* Espaçamento entre os elementos flex */
@@ -37,6 +38,7 @@ header h1 {
     margin: 0; /* Remove a margem padrão do h1 */
     font-weight: 500; /* Peso da fonte (médio) */
     white-space: nowrap; /* Impede a quebra de linha do texto */
+    color: var(--primary-color); /* Aplica a nova cor de destaque ao título */
 }
 
 #caixa-busca {
@@ -110,7 +112,7 @@ article {
     border-bottom: none; /* Remove a borda inferior anterior */
     z-index: 1; /* Garante o empilhamento correto */
     overflow: hidden; /* Garante que o pseudo-elemento não vaze */
-    background-color: #292a2d; /* Cor de fundo caso a imagem falhe */
+    background-color: #1e1e1e; /* Cor de fundo do card, um pouco mais clara que o body */
 }
 
 article:hover {
@@ -141,10 +143,11 @@ article:hover {
 
 .article-content {
     position: relative; /* Garante que o texto fique acima da sobreposição */
-    padding: 1.5rem; /* Adiciona o espaçamento que antes estava no article */
-    padding-top: 0; /* Remove o padding do topo pois já temos a margem da imagem */
-    background-color: rgba(41, 42, 45, 0.7); /* Fundo semi-transparente para o texto */
+    padding: 1.5rem; /* Espaçamento interno da caixa de texto */
+    background-color: rgba(30, 30, 30, 0.7); /* Fundo do texto, baseado na nova cor do card */
     backdrop-filter: blur(5px); /* Efeito de vidro fosco no fundo do texto */
+    margin: 0 1.5rem 1.5rem 1.5rem; /* Margens para "abaixar" e centralizar a caixa */
+    border-radius: 6px; /* Arredonda os cantos da caixa de texto */
     display: flex;
     flex-direction: column; /* Organiza o conteúdo do texto em coluna */
     /* Adicionado para o efeito de expansão de texto */
@@ -242,7 +245,7 @@ article a:hover {
     left: 0; /* Alinha à esquerda */
     width: 100%; /* Largura total */
     color: var(--tertiary-color); /* Cor do texto */
-    background-color: var(--bg-color); /* Cor de fundo */
+    background-color: #181818; /* Mesma cor do header */
     padding: 15px 20px; /* Espaçamento interno */
     border-top: 1px solid #3c4043; /* Borda superior */
     z-index: 10; /* Garante que fique acima do conteúdo que rola por baixo */
