@@ -4,69 +4,219 @@
     "title": "Hollow Knight",
     "category": "Metroidvania, Plataforma",
     "content": "Explore um vasto reino em ruínas de insetos e heróis. Enfrente hordas de criaturas, desvende mistérios antigos e lute contra chefes desafiadores neste aclamado jogo de ação e aventura.",
-    "tags": ["metroidvania", "plataforma", "ação", "aventura", "difícil"]
+    "tags": ["metroidvania", "plataforma", "ação", "aventura", "difícil"],
+    "source": "https://hollowknight.fandom.com/wiki/Hollow_Knight_Wiki",
+    "coverImage": "https://cdn.akamai.steamstatic.com/steam/apps/367520/header.jpg?t=1693931964",
+    "year": 2017,
+    "rating": 4.8
   },
   {
     "id": 2,
     "title": "Stardew Valley",
     "category": "Simulação, RPG",
     "content": "Você herdou a antiga fazenda do seu avô. Com ferramentas de segunda mão e algumas moedas, você dará início à sua nova vida para transformar campos abandonados em um lar próspero.",
-    "tags": ["simulação", "fazenda", "rpg", "pixel art", "relaxante"]
+    "tags": ["simulação", "fazenda", "rpg", "pixel art", "relaxante"],
+    "source": "https://stardewvalleywiki.com/Stardew_Valley_Wiki",
+    "coverImage": "https://cdn.akamai.steamstatic.com/steam/apps/413150/header.jpg?t=1684824924",
+    "year": 2016,
+    "rating": 4.9
   },
   {
     "id": 3,
     "title": "Celeste",
     "category": "Plataforma",
     "content": "Ajude Madeline a sobreviver aos seus demônios interiores em sua jornada até o topo da Montanha Celeste, neste jogo de plataforma super afiado e feito à mão.",
-    "tags": ["plataforma", "difícil", "pixel art", "história", "indie"]
+    "tags": ["plataforma", "difícil", "pixel art", "história", "indie", "brasileiro"],
+    "source": "https://celestegame.fandom.com/wiki/Celeste_Wiki",
+    "coverImage": "https://cdn.akamai.steamstatic.com/steam/apps/504230/header.jpg?t=1667412503",
+    "year": 2018,
+    "rating": 4.7
   },
   {
     "id": 4,
     "title": "Hades",
     "category": "Roguelike, Ação",
     "content": "Desafie o deus dos mortos enquanto você batalha para fugir do Submundo neste 'roguelike' dos criadores de Bastion e Transistor. Uma visão única da mitologia grega.",
-    "tags": ["roguelike", "ação", "mitologia", "narrativa", "rpg"]
+    "tags": ["roguelike", "ação", "mitologia", "narrativa", "rpg"],
+    "source": "https://hades.fandom.com/wiki/Hades_Wiki",
+    "coverImage": "https://cdn.akamai.steamstatic.com/steam/apps/1145360/header.jpg?t=1690413283",
+    "year": 2020,
+    "rating": 4.9
   },
   {
     "id": 5,
     "title": "Undertale",
     "category": "RPG",
     "content": "Um RPG onde você não precisa destruir ninguém. Explore um mundo subterrâneo cheio de monstros, onde suas escolhas determinam o destino de todos.",
-    "tags": ["rpg", "pixel art", "escolhas", "cult", "trilha sonora"]
+    "tags": ["rpg", "pixel art", "escolhas", "cult", "trilha sonora"],
+    "source": "https://undertale.fandom.com/wiki/Main_Page",
+    "coverImage": "https://cdn.akamai.steamstatic.com/steam/apps/391540/header.jpg?t=1695058241",
+    "year": 2015,
+    "rating": 4.8
   },
   {
     "id": 6,
     "title": "Shovel Knight: Treasure Trove",
     "category": "Plataforma, Ação",
     "content": "Uma carta de amor aos jogos de 8-bits. Corra, pule e use sua pá para lutar contra os cavaleiros da Ordem Sem Quartel e sua líder, a Feiticeira.",
-    "tags": ["plataforma", "ação", "retrô", "pixel art", "8-bit"]
+    "tags": ["plataforma", "ação", "retrô", "pixel art", "8-bit"],
+    "source": "https://shovelknight.fandom.com/wiki/Shovel_Knight_Wiki",
+    "coverImage": "https://cdn.akamai.steamstatic.com/steam/apps/250760/header.jpg?t=1703202754",
+    "year": 2014,
+    "rating": 4.6
   },
   {
     "id": 7,
     "title": "Dead Cells",
     "category": "Roguelite, Metroidvania",
     "content": "Explore um castelo em constante mudança neste jogo de ação e plataforma 2D. Lute, morra, aprenda e repita. A morte é apenas o começo.",
-    "tags": ["roguelite", "metroidvania", "ação", "pixel art", "rápido"]
+    "tags": ["roguelite", "metroidvania", "ação", "pixel art", "rápido"],
+    "source": "https://deadcells.fandom.com/wiki/Dead_Cells_Wiki",
+    "coverImage": "https://cdn.akamai.steamstatic.com/steam/apps/588650/header.jpg?t=1712222972",
+    "year": 2018,
+    "rating": 4.7
   },
   {
     "id": 8,
     "title": "Cuphead",
     "category": "Ação, Plataforma",
     "content": "Inspirado nos desenhos animados da década de 1930, Cuphead é um jogo de ação 'run and gun' focado em batalhas épicas contra chefes.",
-    "tags": ["ação", "difícil", "co-op", "desenho animado", "run and gun"]
+    "tags": ["ação", "difícil", "co-op", "desenho animado", "run and gun"],
+    "source": "https://cuphead.fandom.com/wiki/Cuphead_Wiki",
+    "coverImage": "https://cdn.akamai.steamstatic.com/steam/apps/268910/header.jpg?t=1673978343",
+    "year": 2017,
+    "rating": 4.6
   },
   {
     "id": 9,
     "title": "Inside",
     "category": "Puzzle, Plataforma",
     "content": "Caçado e sozinho, um garoto se encontra no centro de um projeto sombrio. Uma aventura narrativa com quebra-cabeças e uma atmosfera inesquecível.",
-    "tags": ["puzzle", "plataforma", "atmosférico", "sombrio", "narrativa"]
+    "tags": ["puzzle", "plataforma", "atmosférico", "sombrio", "narrativa"],
+    "source": "https://playdead.com/games/inside/",
+    "coverImage": "https://cdn.akamai.steamstatic.com/steam/apps/304430/header.jpg?t=1664229563",
+    "year": 2016,
+    "rating": 4.5
   },
   {
     "id": 10,
     "title": "The Witness",
     "category": "Puzzle",
     "content": "Você acorda sozinho em uma ilha estranha, cheia de quebra-cabeças que irão desafiar e surpreender você. Um jogo de exploração e descoberta em primeira pessoa.",
-    "tags": ["puzzle", "exploração", "primeira pessoa", "desafiador", "mistério"]
+    "tags": ["puzzle", "exploração", "primeira pessoa", "desafiador", "mistério"],
+    "source": "https://the-witness.fandom.com/wiki/The_Witness_Wiki",
+    "coverImage": "https://cdn.akamai.steamstatic.com/steam/apps/210970/header.jpg?t=1696978452",
+    "year": 2016,
+    "rating": 4.2
+  },
+  {
+    "id": 11,
+    "title": "Unsighted",
+    "category": "Metroidvania, Ação, RPG",
+    "content": "Desenvolvido pelo estúdio brasileiro Studio Pixel Punk, Unsighted é um metroidvania com um sistema de tempo único. Cada personagem no jogo tem um tempo de vida limitado, e suas decisões impactam quem vive e quem morre.",
+    "tags": ["metroidvania", "ação", "rpg", "pixel art", "brasileiro", "tempo limitado"],
+    "source": "https://unsighted.fandom.com/wiki/Unsighted_Wiki",
+    "coverImage": "https://cdn.akamai.steamstatic.com/steam/apps/1062110/header.jpg?t=1695752119",
+    "year": 2021,
+    "rating": 4.5
+  },
+  {
+    "id": 12,
+    "title": "Dandara: Trials of Fear Edition",
+    "category": "Metroidvania, Plataforma",
+    "content": "Criado pelo estúdio brasileiro Long Hat House, Dandara é um jogo de plataforma 2D único onde você desafia a gravidade, pulando por paredes e tetos. Lute para libertar o mundo de Salt da opressão.",
+    "tags": ["metroidvania", "plataforma", "pixel art", "brasileiro", "desafiador"],
+    "source": "https://dandara.fandom.com/wiki/Dandara_Wiki",
+    "coverImage": "https://cdn.akamai.steamstatic.com/steam/apps/612390/header.jpg?t=1667412530",
+    "year": 2018,
+    "rating": 4.1
+  },
+  {
+    "id": 13,
+    "title": "Horizon Chase Turbo",
+    "category": "Corrida, Arcade",
+    "content": "Uma carta de amor aos jogos de corrida dos anos 80 e 90, desenvolvido pelo estúdio brasileiro Aquiris. Corra por horizontes deslumbrantes, com uma trilha sonora empolgante e jogabilidade arcade viciante.",
+    "tags": ["corrida", "arcade", "retrô", "multiplayer", "brasileiro"],
+    "source": "https://horizonchase.fandom.com/wiki/Horizon_Chase_Wiki",
+    "coverImage": "https://cdn.akamai.steamstatic.com/steam/apps/389140/header.jpg?t=1680121055",
+    "year": 2018,
+    "rating": 4.4
+  },
+  {
+    "id": 14,
+    "title": "Outer Wilds",
+    "category": "Aventura, Exploração, Puzzle",
+    "content": "Explore um sistema solar preso em um loop temporal infinito. Descubra os segredos de uma civilização antiga e tente parar o ciclo neste jogo de exploração em mundo aberto aclamado pela crítica.",
+    "tags": ["exploração", "mistério", "loop temporal", "espaço", "puzzle"],
+    "source": "https://outerwilds.fandom.com/wiki/Outer_Wilds_Wiki",
+    "coverImage": "https://cdn.akamai.steamstatic.com/steam/apps/753640/header.jpg?t=1680133292",
+    "year": 2019,
+    "rating": 4.9
+  },
+  {
+    "id": 15,
+    "title": "Disco Elysium - The Final Cut",
+    "category": "RPG, Narrativa",
+    "content": "Um RPG inovador onde você é um detetive com um sistema de habilidades único à sua disposição e um quarteirão inteiro para desbravar. Interrogue personagens inesquecíveis, desvende assassinatos ou aceite subornos.",
+    "tags": ["rpg", "narrativa", "detetive", "escolhas", "sem combate"],
+    "source": "https://discoelysium.fandom.com/wiki/Disco_Elysium_Wiki",
+    "coverImage": "https://cdn.akamai.steamstatic.com/steam/apps/632470/header.jpg?t=1692723991",
+    "year": 2019,
+    "rating": 4.8
+  },
+  {
+    "id": 16,
+    "title": "Return of the Obra Dinn",
+    "category": "Puzzle, Mistério, Aventura",
+    "content": "Em 1807, o navio mercante Obra Dinn desapareceu. Agora, ele reapareceu e você, como investigador de seguros, deve descobrir o destino de toda a tripulação usando um relógio de bolso que revela o momento da morte.",
+    "tags": ["puzzle", "mistério", "investigação", "1-bit", "narrativa"],
+    "source": "https://obradinn.fandom.com/wiki/Return_of_the_Obra_Dinn_Wiki",
+    "coverImage": "https://cdn.akamai.steamstatic.com/steam/apps/653530/header.jpg?t=1667412622",
+    "year": 2018,
+    "rating": 4.7
+  },
+  {
+    "id": 17,
+    "title": "Gris",
+    "category": "Plataforma, Aventura, Arte",
+    "content": "Gris é uma jovem esperançosa perdida em seu próprio mundo, lidando com uma experiência dolorosa em sua vida. Sua jornada pela tristeza se manifesta em seu vestido, que concede novas habilidades para navegar em sua realidade desbotada.",
+    "tags": ["arte", "plataforma", "atmosférico", "visual", "emocional"],
+    "source": "https://gris.fandom.com/wiki/Gris_Wiki",
+    "coverImage": "https://cdn.akamai.steamstatic.com/steam/apps/683320/header.jpg?t=1667412644",
+    "year": 2018,
+    "rating": 4.6
+  },
+  {
+    "id": 18,
+    "title": "Katana ZERO",
+    "category": "Ação, Plataforma",
+    "content": "Um estiloso jogo de plataforma neo-noir com ação alucinante e combate de morte instantânea. Ataque, desvie e manipule o tempo para desvendar seu passado em uma exibição acrobática brutalmente bela.",
+    "tags": ["ação", "pixel art", "neo-noir", "rápido", "difícil"],
+    "source": "https://katana-zero.fandom.com/wiki/Katana_Zero_Wiki",
+    "coverImage": "https://cdn.akamai.steamstatic.com/steam/apps/460950/header.jpg?t=1678991503",
+    "year": 2019,
+    "rating": 4.8
+  },
+  {
+    "id": 19,
+    "title": "Hollow Knight: Silksong",
+    "category": "Metroidvania, Ação, Aventura",
+    "content": "A aguardada sequência de Hollow Knight. Jogue como a princesa-protetora de Hallownest, Hornet, e aventure-se por um reino totalmente novo, assombrado por seda e canções. Com novas habilidades, inimigos e mistérios para desvendar.",
+    "tags": ["metroidvania", "plataforma", "ação", "aventura", "sequência", "aguardado"],
+    "source": "https://hollowknightsilksong.com/",
+    "coverImage": "https://upload.wikimedia.org/wikipedia/en/5/58/Hollow_Knight_Silksong_cover_art.jpg",
+    "year": "TBA",
+    "rating": 0
+  },
+  {
+    "id": 20,
+    "title": "Hades II",
+    "category": "Roguelike, Ação, RPG",
+    "content": "A primeira sequência da Supergiant Games. Como a Princesa do Submundo, Melinoë, explore um mundo mítico maior e mais profundo, enfrentando as forças do Titã do Tempo com a ajuda de novos e antigos deuses do Olimpo.",
+    "tags": ["roguelike", "ação", "mitologia", "narrativa", "sequência", "early access"],
+    "source": "https://www.supergiantgames.com/games/hades-ii/",
+    "coverImage": "https://cdn.akamai.steamstatic.com/steam/apps/1145350/header.jpg?t=1715098802",
+    "year": 2024,
+    "rating": 4.9
   }
 ]

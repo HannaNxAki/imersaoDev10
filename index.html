@@ -1,44 +1,34 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-BR">
 <head>
-    <!-- Metadados essenciais para o navegador -->
     <meta charset="UTF-8">
-    <!-- Garante que a página seja responsiva e se adapte a diferentes tamanhos de tela -->
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <!-- Link para a folha de estilos externa que define a aparência da página -->
+    <title>Jogos Indies</title>
     <link rel="stylesheet" href="styles.css">
-    <title>Lista de jogos indies</title>
 </head>
 <body>
-    <!-- Cabeçalho da página: contém o título principal e a barra de busca -->
     <header>
-        <h1> Jogos indies</h1>
+        <h1>Jogos Indies</h1>
         <div>
-            <!-- Campo de busca. O 'aria-label' melhora a acessibilidade para leitores de tela -->
-            <input type="search" placeholder="Pesquisar artigos..." aria-label="Caixa de pesquisa">
+            <input type="text" id="caixa-busca" placeholder="Pesquisar por título, categoria, tag...">
             <button id="botao-busca">Buscar</button>
         </div>
     </header>
 
-    <!-- Conteúdo principal da página, onde os artigos serão exibidos -->
-    <main>
-
+    <main id="articles-container">
+        <!-- Os artigos serão inseridos dinamicamente aqui -->
     </main>
 
-    <!-- Rodapé da página: contém links para redes sociais -->
     <footer class="footer">
+        <div class="footer-location">Brasil</div>
         <ul class="footer-links">
-            <!-- Links para redes sociais. 'target="_blank"' abre em uma nova aba. -->
-            <!-- 'rel="noopener noreferrer"' é uma medida de segurança para links externos. -->
             <li><a href="https://github.com/HannaNxAki" target="_blank" rel="noopener noreferrer">GitHub</a></li>
             <li><a href="https://www.linkedin.com/in/hanna-maciel/" target="_blank" rel="noopener noreferrer">LinkedIn</a></li>
             <li><a href="https://www.instagram.com/aki_yuzuk/" target="_blank" rel="noopener noreferrer">Instagram</a></li>
             <li><a href="https://www.alura.com.br" target="_blank" rel="noopener noreferrer">Alura</a></li>
         </ul>
     </footer>
-    <!-- Link para o arquivo JavaScript. 'defer' garante que o script execute após o HTML ser analisado. -->
-    <script src="script.js" defer></script>
+
+    <script src="script.js"></script>
 </body>
-
 </html>
-

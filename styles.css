@@ -9,7 +9,7 @@
     --primary-color: #8ab4f8; /* Cor primária para links e destaques */
     --secondary-color: #e8eaed; /* Cor secundária (cinza claro) */
     --tertiary-color: #9aa0a6; /* Cor terciária (cinza médio) */
-    --bg-color: #202124; /* Cor de fundo (cinza escuro) */
+    --bg-color: #292d38; /* Cor de fundo (cinza escuro) */
 }
 
 body {
@@ -39,7 +39,7 @@ header h1 {
     white-space: nowrap; /* Impede a quebra de linha do texto */
 }
 
-div input {
+#caixa-busca {
     padding: 0.375rem 0.75rem; /* Espaçamento interno */
     border-radius: 1rem; /* Arredonda as bordas */
     border: 1px solid var(--tertiary-color); /* Define a borda */
@@ -52,13 +52,13 @@ div input {
     margin-right: .5rem; /* Margem à direita */
 }
 
-div input::placeholder {
+input#caixa-busca::placeholder {
     font-size: 1.2rem; /* Tamanho da fonte do placeholder */
     font-weight: 300; /* Peso da fonte do placeholder */
     color: var(--tertiary-color); /* Cor do texto do placeholder */
 }
 
-div input:focus {
+input#caixa-busca:focus {
     outline: none; /* Remove a borda de foco padrão do navegador */
     border-color: var(--bg-color); /* Esconde a borda para dar espaço ao box-shadow */
     box-shadow: 0 0 0 0.1rem var(--tertiary-color); /* Adiciona uma sombra de caixa para indicar foco */
@@ -90,54 +90,143 @@ div input:focus {
 }
 
 main {
-    overflow-y: scroll; /* Adiciona uma barra de rolagem vertical se o conteúdo exceder a altura */
     max-width: 80rem; /* Largura máxima do conteúdo principal */
     margin: 0 auto; /* Centraliza o conteúdo principal horizontalmente */
     margin-top: 2rem; /* Espaçamento entre o cabeçalho e o início dos artigos */
-    height: calc(100vh - 10rem - 4rem); /* Calcula a altura para preencher o espaço restante da tela */
+    padding-bottom: 8rem; /* Adiciona espaço abaixo do conteúdo antes do rodapé */
+}
+
+.article-wrapper {
+    position: relative; /* Âncora para o article absoluto */
+    margin-bottom: 1.25rem; /* Margem que antes estava no article */
 }
 
 article {
-    background: none; /* Sem cor de fundo */
-    border-radius: 0; /* Sem bordas arredondadas */
-    padding: 0; /* Remove o padding */
-    padding: 0 1rem; /* Espaçamento interno nos lados */
-    margin-bottom: 1.25rem; /* Margem inferior */
-    box-shadow: none; /* Sem sombra */
-    transition: background-color 0.3s ease, border-bottom-color 0.3s ease; /* Transição suave */
-    border-bottom: 1px solid var(--bg-color); /* Borda inferior */
-    padding-bottom: 1.5rem; /* Espaçamento interno inferior */
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    border-radius: 8px; /* Bordas arredondadas para o card */
+    transition: all 0.3s ease; /* Transição suave para todas as propriedades */
+    border-bottom: none; /* Remove a borda inferior anterior */
+    z-index: 1; /* Garante o empilhamento correto */
+    overflow: hidden; /* Garante que o pseudo-elemento não vaze */
+    background-color: #292a2d; /* Cor de fundo caso a imagem falhe */
 }
 
 article:hover {
-    transform: scale(1.01); /* Aumenta ligeiramente o tamanho ao passar o mouse */
-    cursor: pointer; /* Muda o cursor para uma mão */
+    transform: translateY(-5px); /* Levanta o card levemente */
+}
+
+.background-image {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    filter: blur(10px) brightness(0.5); /* Desfoque e escurecimento */
+    transform: scale(1.1); /* Leve zoom para evitar bordas vazias do blur */
+    z-index: -1; /* Coloca a imagem atrás de todo o conteúdo */
+}
+
+.game-cover-main {
+    position: relative;
+    width: 60%; /* Largura da imagem principal */
+    height: 180px; /* Altura da imagem principal, aumentada para melhor visualização */
+    object-fit: contain; /* Ajusta a imagem para caber inteira, sem cortar */
+    border-radius: 6px; /* Bordas arredondadas */
+    transition: all 0.3s ease;
+    margin: 2rem auto 1.5rem auto; /* Centraliza e adiciona espaçamento */
+}
+
+.article-content {
+    position: relative; /* Garante que o texto fique acima da sobreposição */
+    padding: 1.5rem; /* Adiciona o espaçamento que antes estava no article */
+    padding-top: 0; /* Remove o padding do topo pois já temos a margem da imagem */
+    background-color: rgba(41, 42, 45, 0.7); /* Fundo semi-transparente para o texto */
+    backdrop-filter: blur(5px); /* Efeito de vidro fosco no fundo do texto */
+    display: flex;
+    flex-direction: column; /* Organiza o conteúdo do texto em coluna */
+    /* Adicionado para o efeito de expansão de texto */
+    min-width: 0;
+    flex-grow: 1;
+}
+
+.article-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: 1rem;
+    margin-bottom: 0.75rem;
 }
 
 article h2 {
+    /* Resetando estilos anteriores */
+    display: block;
+    gap: 0;
     margin-top: 0; /* Remove a margem superior */
+    margin-bottom: 0; /* Remove a margem inferior */
     font-weight: 600; /* Peso da fonte */
     font-size: 1.6rem; /* Tamanho da fonte */
-    border-bottom: none; /* Sem borda inferior */
-    padding-bottom: 0; /* Sem espaçamento interno inferior */
-    margin-bottom: 0.25rem; /* Margem inferior */
     color: var(--primary-color); /* Cor do texto */
 }
 
 article p {
-    margin: 0.5rem 0; /* Margem superior e inferior */
+    margin: 0.25rem 0; /* Margem superior e inferior */
     line-height: 1.6; /* Altura da linha para melhor legibilidade */
     font-size: 1rem; /* Tamanho da fonte */
-    margin-bottom: 0.5rem; /* Margem inferior */
     color: var(--secondary-color); /* Cor do texto */
+}
+
+/* Esconde parte da descrição no estado normal */
+.article-content p:not(:first-of-type) {
+    max-height: 4.8rem; /* Limita a altura (aprox. 3 linhas) */
+    overflow: hidden; /* Esconde o texto que transborda */
+    transition: max-height 0.3s ease;
+}
+
+.article-footer {
+    margin-top: auto; /* Empurra o rodapé do card para o final */
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    flex-wrap: wrap;
+    gap: 1rem;
+    padding-top: 0.5rem; /* Espaço acima do rodapé */
+    border-top: 1px solid #3c4043; /* Linha divisória */
+}
+
+.article-footer p {
+    margin: 0;
+    flex-basis: 100%; /* Faz as tags ocuparem a linha de cima */
+}
+
+.rating-and-source {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    margin-left: auto; /* Empurra para a direita */
+}
+
+.rating-text {
+    font-size: 0.9rem;
+    font-weight: 500;
+    color: var(--tertiary-color);
+}
+
+.star-rating svg {
+    vertical-align: middle;
+    width: 1.1rem;
+    height: 1.1rem;
+    fill: #fbbc05; /* Cor amarela para as estrelas */
 }
 
 article p strong {
     color: var(--tertiary-color); /* Cor do texto em negrito */
-    font-weight: 400; /* Peso da fonte */
+    font-weight: 500; /* Aumentando um pouco o peso para melhor leitura */
 }
 
-article a {
+.source-link {
     color: var(--primary-color); /* Cor do link */
     text-decoration: none; /* Remove o sublinhado padrão */
     font-weight: 200; /* Peso da fonte */
@@ -148,7 +237,7 @@ article a:hover {
 }
 
 .footer {
-    position: absolute; /* Posicionamento absoluto para fixar o rodapé na parte inferior da janela */
+    position: fixed; /* Posicionamento fixo para o rodapé */
     bottom: 0; /* Alinha na parte inferior */
     left: 0; /* Alinha à esquerda */
     width: 100%; /* Largura total */
@@ -156,6 +245,7 @@ article a:hover {
     background-color: var(--bg-color); /* Cor de fundo */
     padding: 15px 20px; /* Espaçamento interno */
     border-top: 1px solid #3c4043; /* Borda superior */
+    z-index: 10; /* Garante que fique acima do conteúdo que rola por baixo */
     font-size: 0.8rem; /* Tamanho da fonte */
 }
 
@@ -179,7 +269,7 @@ article a:hover {
 }
 
 .footer-links a:hover {
-    color: var(--accent-color); /* Muda a cor do link ao passar o mouse (variável não definida) */
+    color: var(--primary-color); /* Muda a cor do link ao passar o mouse */
 }
 
 /* Media Query para telas menores (tablets e celulares em modo paisagem) */
@@ -194,7 +284,7 @@ article a:hover {
         margin-bottom: 1rem; /* Adiciona margem inferior */
     }
 
-    div input { /* Estilos para o input em telas menores */
+    #caixa-busca { /* Estilos para o input em telas menores */
         width: 90vw; /* Largura baseada na largura da viewport */
         font-size: 1.2rem; /* Reduz o tamanho da fonte */
     }
@@ -203,8 +293,12 @@ article a:hover {
         padding: 0 1rem; /* Adiciona espaçamento lateral */
     }
 
-    article:hover { /* Estilos para o article em telas menores */
-        transform: none; /* Remove o efeito de escala ao passar o mouse */
+    article {
+        /* A direção da coluna já é o padrão agora, então não precisamos mudar */
+    }
+
+    .article-content {
+        align-items: center; /* Centraliza o conteúdo do texto */
     }
 }
 
@@ -216,21 +310,13 @@ article a:hover {
         word-wrap: break-word; /* Permite a quebra de palavras longas */
     }
 
-    div input, /* Estilos para o input e seu placeholder em telas muito pequenas */
-    div input::placeholder {
+    #caixa-busca, /* Estilos para o input e seu placeholder em telas muito pequenas */
+    #caixa-busca::placeholder {
         font-size: 1rem; /* Reduz o tamanho da fonte */
     }
 
     article h2 { /* Estilos para o h2 do article em telas muito pequenas */
         font-size: 1.3rem; /* Reduz o tamanho da fonte */
-    }
-
-    div { /* Estilos para a div do cabeçalho em telas muito pequenas */
-        display: flex; /* Habilita flexbox */
-        align-items: center; /* Alinha itens ao centro */
-        justify-content: center; /* Centraliza itens */
-        flex-direction: column; /* Organiza em coluna */
-        gap: 0.5rem; /* Espaçamento entre os itens */
     }
 
     .footer { /* Estilos para o rodapé em telas muito pequenas */
@@ -241,4 +327,3 @@ article a:hover {
         margin-top: 1rem; /* Adiciona margem no topo */
     }
 }
-
